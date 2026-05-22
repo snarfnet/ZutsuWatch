@@ -30,7 +30,7 @@ targets:
       - ZutsuWatch
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.snarfnet.zutsuwatch
+        PRODUCT_BUNDLE_IDENTIFIER: com.zutsuwatch.app
     dependencies:
       - package: GoogleMobileAds
         product: GoogleMobileAds
