@@ -1,0 +1,36 @@
+name: ZutsuWatch
+options:
+  bundleIdPrefix: com.snarfnet
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+
+packages:
+  GoogleMobileAds:
+    url: https://github.com/googleads/swift-package-manager-google-mobile-ads
+    from: "12.0.0"
+
+settings:
+  base:
+    MARKETING_VERSION: "1.1"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: 83VGKGSQUH
+    CODE_SIGN_STYLE: Automatic
+    INFOPLIST_FILE: ZutsuWatch/Info.plist
+    GENERATE_INFOPLIST_FILE: NO
+    TARGETED_DEVICE_FAMILY: "1,2"
+
+targets:
+  ZutsuWatch:
+    type: application
+    platform: iOS
+    sources:
+      - ZutsuWatch
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.snarfnet.zutsuwatch
+    dependencies:
+      - package: GoogleMobileAds
+        product: GoogleMobileAds
