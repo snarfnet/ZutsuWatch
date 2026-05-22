@@ -5,6 +5,9 @@ struct MainTabView: View {
 
     var body: some View {
         VStack(spacing: 0) {
+            BannerAdView(adUnitID: AdConfig.topBannerAdUnitID)
+                .frame(height: 50)
+
             TabView {
                 HomeView(pressure: pressure)
                     .tabItem {
@@ -23,7 +26,7 @@ struct MainTabView: View {
             }
             .tint(AppTheme.lavender)
 
-            BannerAdView()
+            BannerAdView(adUnitID: AdConfig.bottomBannerAdUnitID)
                 .frame(height: 50)
         }
     }
