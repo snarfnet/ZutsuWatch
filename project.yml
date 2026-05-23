@@ -31,6 +31,10 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.zutsuwatch.app
+    postBuildScripts:
+      - script: |
+          /usr/libexec/PlistBuddy -c "Delete :NSUserTrackingUsageDescription" "${TARGET_BUILD_DIR}/${INFOPLIST_PATH}" 2>/dev/null || true
+        name: Remove NSUserTrackingUsageDescription
     dependencies:
       - package: GoogleMobileAds
         product: GoogleMobileAds
