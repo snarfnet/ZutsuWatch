@@ -55,6 +55,16 @@ jobs:
             -authenticationKeyID WDXGY9WX55 \
             -authenticationKeyIssuerID 2be0734f-943a-4d61-9dc9-5d9045c46fec
 
+      - name: Remove NSUserTrackingUsageDescription from archive
+        run: |
+          APP_PLIST="build/ZutsuWatch.xcarchive/Products/Applications/ZutsuWatch.app/Info.plist"
+          if /usr/libexec/PlistBuddy -c "Print :NSUserTrackingUsageDescription" "$APP_PLIST" 2>/dev/null; then
+            /usr/libexec/PlistBuddy -c "Delete :NSUserTrackingUsageDescription" "$APP_PLIST"
+            echo "Removed NSUserTrackingUsageDescription from archive"
+          else
+            echo "NSUserTrackingUsageDescription not found in archive plist"
+          fi
+
       - name: Export IPA
         run: |
           xcodebuild -exportArchive \
