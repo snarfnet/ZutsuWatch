@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"python3 -c \\\"\\nimport jwt, time, requests, json\\n\\nKEY_ID = 'WDXGY9WX55'\\nISSUER = '2be0734f-943a-4d61-9dc9-5d9045c46fec'\\np8 = open('/tmp/asc_key.p8').read()\\nAPP_ID = '6771256988'\\n\\ndef...",
+  "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 37, in <module>\r\n    sub_id = r1.json()['data']['id']\r\n             ~~~~~~~~~^^^^^^^^\r\nKeyError: 'data'\r\nCancelled old submission\r\nCancelled old submission\r\nCancelled old submission\r\nCancelled old submission\r\nCreate submission: 409",
+  "timestamp": "2026-05-24T13:53:55.377Z",
+  "retry_count": 1
+}

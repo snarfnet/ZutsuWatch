@@ -1,0 +1,74 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1779512800892,
+  "projectRoot": "C:\\Users\\Windows\\ZutsuWatch",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "ZutsuWatch": {
+      "path": "ZutsuWatch",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1779512800830,
+      "keyFiles": [
+        "Info.plist",
+        "ZutsuWatchApp.swift"
+      ]
+    },
+    "ZutsuWatch\\Models": {
+      "path": "ZutsuWatch\\Models",
+      "purpose": "Data models",
+      "fileCount": 1,
+      "lastAccessed": 1779512800831,
+      "keyFiles": [
+        "PressureData.swift"
+      ]
+    },
+    "ZutsuWatch\\Services": {
+      "path": "ZutsuWatch\\Services",
+      "purpose": "Business logic services",
+      "fileCount": 1,
+      "lastAccessed": 1779512800832,
+      "keyFiles": [
+        "PressureService.swift"
+      ]
+    },
+    "ZutsuWatch\\Views": {
+      "path": "ZutsuWatch\\Views",
+      "purpose": "View templates",
+      "fileCount": 5,
+      "lastAccessed": 1779512800833,
+      "keyFiles": [
+        "DiaryView.swift",
+        "HomeView.swift",
+        "MainTabView.swift"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}
